@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Streamrun - Join the waiting list</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+
+    <style type="text/css">
+        body {
+            text-align: center;
+        }
+        form {
+            max-width: 500px;
+            margin: 40px auto;
+        }
+        .radio-group {
+            text-align: left;
+            margin: 40px 0;
+        }
+        h1, h2, h3 {
+            font-weight: 400;
+        }
+        h3 {
+            margin-top: 70px;
+        }
+        .stripe {
+            height: 20px;
+            width: 100%;
+            background: rgb(87,21,21);
+            background: linear-gradient(135deg, rgba(87,21,21,1) 0%, rgba(0,22,255,1) 100%);
+        }
+    </style>
+  </head>
+
+  <body>
+    <div class="stripe"></div>
+    <main class="container">
+
+    <h1>Streamrun</h1>
+    <p>We are building tools and services to elevate streamers to new heights.</p>
+
+    <h3>Join the waiting list</h3>
+      <section id="form">
+        <form action="https://getform.io/f/negA03bw" method="POST">
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="email" placeholder="Email">
+            <input type="text" name="some" placeholder="Social media username">
+            <input type="hidden" name="_gotcha" style="display:none !important">
+
+
+            <div class="radio-group">
+                <p>What best describes you?</p>
+                <label>
+                    <input type="radio" name="role" value="interested" checked>
+                    Just interested in learning more
+                </label>                
+                <label>
+                    <input type="radio" name="role" value="pro">
+                    Professional streamer or creator
+                </label>
+                <label>
+                    <input type="radio" name="role" value="hobbyist">
+                    Hobbyist streamer or creator
+                </label>
+                <label>
+                    <input type="radio" name="role" value="agency">
+                    Agency or management
+                </label>
+                <label>
+                    <input type="radio" name="role" value="b2b">
+                    Video producer, B2B or other
+                </label>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+      </section>
+
+    </main>
+  </body>
+</html>
